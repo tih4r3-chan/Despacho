@@ -3,25 +3,25 @@ import { RiUserFill } from 'react-icons/ri';
 
 function Navbar() {
   return (
-    <div className=''>
-    <nav className='bg-gray-800 p-4 flex items-center justify-between'>
-      <div className='flex items-centser'>
-        {/* nombre/ logo */}
-        <div>
-          <p className='text-white'>Despacho</p>
+    <div className='grid justify-items-center'>
+      <nav className='p-4 flex items-center'>
+        <div className='flex items-center'>
+          {/* nombre/ logo */}
+          <div className='pr-10'>
+            <h2 className='text-xl font-bold transition-all hover:text-2xl duration-500'>Despacho</h2>
+          </div>
+          {/* opciones */}
+          <div className='items-center space-x-7'>
+            <a href="#" className='ml-4'>Seguimiento</a>
+            <a href="#" className='ml-4'>Sucursal</a>
+            <a href="#" className='ml-4'>Contato</a>
+          </div>
+          {/* perfin */}
+          <div className='hidden sm:block x-end'>
+            <RiUserFill className='h-8 w-8'/>
+          </div>
         </div>
-        {/* opciones */}
-        <div className='items-center space-x-4'>
-          <a href="#" className='text-white ml-4'>Seguimiento</a>
-          <a href="#" className='text-white ml-4'>Sucursal</a>
-          <a href="#" className='text-white ml-4'>Contato</a>
-        </div>
-        {/* botonperfin */}
-        <div className='hidden sm:block x-end'>
-          <RiUserFill className="h-8 w-8 text-white" />
-        </div>
-      </div>
-    </nav>
+      </nav>
     </div>
   );
 }
