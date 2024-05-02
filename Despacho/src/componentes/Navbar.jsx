@@ -14,7 +14,7 @@ function Navbar() {
           <div className='items-center space-x-7'>
             <a href="#" className='ml-4'>Seguimiento</a>
             <a href="#" className='ml-4'>Sucursal</a>
-            <a href="#" className='ml-4'>Contato</a>
+            <a href="#" className='ml-4'>Contacto</a>
           </div>
           {/* perfil */}
           <div className='hidden sm:block x-end'>
