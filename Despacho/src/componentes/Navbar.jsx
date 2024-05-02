@@ -16,7 +16,7 @@ function Navbar() {
             <a href="#" className='ml-4'>Sucursal</a>
             <a href="#" className='ml-4'>Contato</a>
           </div>
-          {/* perfin */}
+          {/* perfil */}
           <div className='hidden sm:block x-end'>
             <RiUserFill className='h-8 w-8'/>
           </div>
