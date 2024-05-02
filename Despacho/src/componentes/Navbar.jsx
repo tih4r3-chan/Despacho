@@ -3,12 +3,12 @@ import { RiUserFill } from 'react-icons/ri';
 
 function Navbar() {
   return (
-    <div className='grid justify-items-center'>
+    <div className='grid justify-items-center bg-teal-500'>
       <nav className='p-4 flex items-center'>
         <div className='flex items-center'>
           {/* nombre/ logo */}
           <div className='pr-10'>
-            <h2 className='text-xl font-bold transition-all hover:text-2xl duration-500'>Despacho</h2>
+            <h2 className='text-xl font-bold transition-all hover:text-2xl duration-500' style={{ marginLeft: '-1rem' }}>Despacho</h2>
           </div>
           {/* opciones */}
           <div className='items-center space-x-7'>
