@@ -8,7 +8,7 @@ function Navbar() {
         <div className='flex items-center'>
           {/* nombre/ logo */}
           <div className='pr-10'>
-            <h2 className='text-xl font-bold transition-all hover:text-2xl duration-500' style={{ marginLeft: '-1rem' }}>Despacho</h2>
+            <h2 className='text-xl font-bold transition-all hover:text-2xl duration-500' style={{ marginLeft: '-30rem' }}>Despacho</h2>
           </div>
           {/* opciones */}
           <div className='items-center space-x-7'>
