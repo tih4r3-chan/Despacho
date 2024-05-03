@@ -7,22 +7,15 @@ function Navbar() {
       <nav className="p-4 flex ">
         <div className="flex ">
           {/* nombre/ logo */}
-
-          <h2 className="text-xl font-bold transition-all hover:text-2xl duration-500 mr-auto">
-            Despacho
-          </h2>
-
+          <div className='pr-10'>
+            <h2 className='text-xl font-bold transition-all hover:text-2xl duration-500' style={{ marginLeft: '-30rem' }}>FunasExpress</h2>
+          </div>
           {/* opciones */}
-          <div className="items-center space-x-7">
-            <a href="#" className="ml-4">
-              Seguimiento
-            </a>
-            <a href="#" className="ml-4">
-              Sucursal
-            </a>
-            <a href="#" className="ml-4">
-              Contacto
-            </a>
+          <div className='items-center space-x-7'>
+            <a href="#" className='ml-4'>Sobre nosotros</a>
+            <a href="#" className='ml-4'>Servicios</a>
+            <a href="#" className='ml-4'>Ayuda</a>
+            <a href="#" className='ml-4'>Contacto</a>
           </div>
           {/* perfil */}
           <div className="hidden sm:block x-end">
