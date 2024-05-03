@@ -1,6 +1,7 @@
 import Navbar from './componentes/Navbar'
 import {SearchBar} from './componentes/SearchBar'
 import Footer from './componentes/Footer'
+import BotonMain from './componentes/BotonMain'
 
 function App() {
   
@@ -12,6 +13,9 @@ function App() {
       <SearchBar/>
       <div>
         <Footer/>
+      </div>
+      <div>
+        <BotonMain/>
       </div>
     </>
   )
