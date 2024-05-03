@@ -12,10 +12,10 @@ function App() {
       </div>
       <SearchBar/>
       <div>
-        <Footer/>
+        <BotonMain/>
       </div>
       <div>
-        <BotonMain/>
+        <Footer/>
       </div>
     </>
   )
