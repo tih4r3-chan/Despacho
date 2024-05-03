@@ -1,11 +1,11 @@
-import React from 'react';
-import { RiUserFill } from 'react-icons/ri';
+import React from "react";
+import { RiUserFill } from "react-icons/ri";
 
 function Navbar() {
   return (
-    <div className='grid justify-items-center bg-teal-500'>
-      <nav className='p-4 flex items-center'>
-        <div className='flex items-center'>
+    <div className="grid justify-items-center bg-teal-500">
+      <nav className="p-4 flex ">
+        <div className="flex ">
           {/* nombre/ logo */}
           <div className='pr-10'>
             <h2 className='text-xl font-bold transition-all hover:text-2xl duration-500' style={{ marginLeft: '-30rem' }}>FunasExpress</h2>
@@ -18,8 +18,8 @@ function Navbar() {
             <a href="#" className='ml-4'>Contacto</a>
           </div>
           {/* perfil */}
-          <div className='hidden sm:block x-end'>
-            <RiUserFill className='h-8 w-8'/>
+          <div className="hidden sm:block x-end">
+            <RiUserFill className="h-8 w-8" />
           </div>
         </div>
       </nav>

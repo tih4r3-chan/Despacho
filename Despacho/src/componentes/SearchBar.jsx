@@ -4,19 +4,18 @@ import logo from "../assets/images/logo.jpeg";
 export const SearchBar = () => {
   return (
     <>
-      <section className="grid grid-cols-12 h-[600px] items-center justify-items-center">
-        <div className="col-span-3">
-          <img src={logo} alt="logo" />
-        </div>
-        <div className="col-span-8">
-          <form>
-            <label className="block text-sm  text-white">Nombre</label>
+      <section className="grid grid-cols-1 h-[200px] items-center justify-items-center">
+        <div className="flex">
+          <form className="flex gap-2">
             <input
               required
               placeholder="Ingresa el n° de orden de despacho"
               type="text"
-              className="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-300 focus:border-blue-300 block duration-500 w-[500px] p-2.5 outline-none"
+              className="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-300 focus:border-blue-300 block duration-500 w-[500px] h-[60px] p-2.5 outline-none"
             />
+            <button className="px-16 bg-teal-500/80 border rounded-xl font-bold hover:bg-teal-600 transition-all duration-500 text-white">
+              Buscar
+            </button>
           </form>
         </div>
       </section>
