@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Footer() {
+function Footer() { 
   return (
 <footer class="bg-teal-500 p-4 text-center fixed bottom-0 w-full">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
