@@ -9,7 +9,7 @@ export const SearchBar = () => {
           <form className="flex gap-2">
             <input
               required
-              placeholder="Ingresa el n° de orden de despacho"
+              placeholder="Ingresa el n° de orden de compra"
               type="text"
               className="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-300 focus:border-blue-300 block duration-500 w-[500px] h-[60px] p-2.5 outline-none"
             />

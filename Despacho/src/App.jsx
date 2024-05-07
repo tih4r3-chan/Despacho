@@ -1,24 +1,27 @@
-import Navbar from './componentes/Navbar'
-import {SearchBar} from './componentes/SearchBar'
-import Footer from './componentes/Footer'
-import BotonMain from './componentes/BotonMain'
+import Navbar from "./componentes/Navbar";
+import { SearchBar } from "./componentes/SearchBar";
+import Footer from "./componentes/Footer";
+import BotonMain from "./componentes/BotonMain";
+import { TableCompras } from "./componentes/TableCompras";
 
 function App() {
-  
   return (
     <>
       <div>
-        <Navbar/>
+        <Navbar />
       </div>
-      <SearchBar/>
+      <SearchBar />
       <div>
-        <BotonMain/>
+        <BotonMain />
       </div>
       <div>
-        <Footer/>
+        <TableCompras />
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
