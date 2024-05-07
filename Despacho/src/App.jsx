@@ -1,8 +1,8 @@
 import Navbar from "./componentes/Navbar";
 import { SearchBar } from "./componentes/SearchBar";
 import Footer from "./componentes/Footer";
-import BotonMain from "./componentes/BotonMain";
 import { TableCompras } from "./componentes/TableCompras";
+import PruebaCard from "./componentes/PruebaCard"
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       </div>
       <SearchBar />
       <div>
-        <BotonMain />
+        <PruebaCard/>
       </div>
       <div>
         <TableCompras />
