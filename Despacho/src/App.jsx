@@ -4,6 +4,7 @@ import Footer from "./componentes/Footer";
 import { TableCompras } from "./componentes/TableCompras";
 import PruebaCard from "./componentes/PruebaCard"
 
+
 function App() {
   return (
     <>
