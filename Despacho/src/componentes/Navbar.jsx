@@ -7,7 +7,7 @@ function Navbar() {
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="" className="h-8" alt="acavaellogo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-           Despacho 
+            Despacho
           </span>
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -25,7 +25,7 @@ function Navbar() {
             aria-controls="navbar-cta"
             aria-expanded="false"
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only">Abrir menu principal</span>
             <svg
               className="w-5 h-5"
               aria-hidden="true"
