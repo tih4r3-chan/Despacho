@@ -1,0 +1,25 @@
+{
+    "Ventas":
+    [
+        {
+            "id": 1,
+            "direccion_compra": "P Sherman Calle Wallabi 42 Syndey",
+            "valor_compra": 22990
+        },
+        {
+            "id": 2,
+            "direccion_compra": "P Sherman Calle Wallabi 42 Syndey",
+            "valor_compra": 22990
+        },
+        {
+            "id": 3,
+            "direccion_compra": "P Sherman Calle Wallabi 42 Syndey",
+            "valor_compra": 22990
+        },
+        {
+            "id": 4,
+            "direccion_compra": "P Sherman Calle Wallabi 42 Syndey",
+            "valor_compra": 22990
+        }
+    ]
+}
