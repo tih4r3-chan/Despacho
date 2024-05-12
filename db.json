@@ -5,25 +5,25 @@
             "id": 1,
             "direccion_compra": "P Sherman Calle Wallabi 42 Syndey",
             "valor_compra": 22990,
-            "fecha_compra": 09/02/2024
+            "fecha_compra": "2024-02-02"
         },
         {
             "id": 2,
             "direccion_compra": "P Sherman Calle Wallabi 42 Syndey",
             "valor_compra": 22990,
-            "fecha_compra": 03/03/2024
+            "fecha_compra": "2024-03-05"
         },
         {
             "id": 3,
             "direccion_compra": "P Sherman Calle Wallabi 42 Syndey",
             "valor_compra": 22990,
-            "fecha_compra": 15/04/2024
+            "fecha_compra": "2024-04-20"
         },
         {
             "id": 4,
             "direccion_compra": "P Sherman Calle Wallabi 42 Syndey",
             "valor_compra": 22990,
-            "fecha_compra": 19/04/2024
+            "fecha_compra": "2024-04-15"
         }
     ]
 }
