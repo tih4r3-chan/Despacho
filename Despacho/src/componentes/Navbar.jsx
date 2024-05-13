@@ -86,7 +86,6 @@ function Navbar() {
               <a
                 href="/contacto"
                 className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                // onClick={toggleModal}
               >
                 Contacto
               </a>
@@ -105,7 +104,9 @@ function Navbar() {
                 </div>
                 <div className="mt-8 text-base text-gray-700 leading-relaxed">
                   <p>
-                    Una empresa dedicada a la distribución nacional, internacional, almacenaje y logística. Los más de 40 años en el mercado nos han permitido especializarnos y convertirnos en una de las empresas con mayor portafolio de productos. Buscamos mantener y mejorar tu experiencia de forma permanente.
+                    Una empresa dedicada a la distribución nacional, internacional, almacenaje y logística. Los más de 40 años en el 
+                    mercado nos han permitido especializarnos y convertirnos en una de las empresas con mayor portafolio de productos. 
+                    Buscamos mantener y mejorar tu experiencia de forma permanente.
                   </p>
                   <p className="mt-4">
                     Enfocados en las necesidades del cliente, la atención personalizada es prioridad para nosotros.
@@ -121,4 +122,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
