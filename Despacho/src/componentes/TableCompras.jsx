@@ -131,7 +131,7 @@ export const TableCompras = () => {
               />
             </div>
             <div className="mb-5">
-              <label className="block font-bold mb-2">Valor de compra</label>
+              <label className="block font-bold mb-2">Valor de compraa</label>
               <input
                 type="number"
                 value={ventaSeleccionada ? ventaSeleccionada.valor_compra : ""}
