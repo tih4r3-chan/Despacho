@@ -57,7 +57,7 @@ export const TableCompras = () => {
                     <td>
                       <button
                         onClick={() => handleAbrirModal(venta)}
-                        className="py-1 bg-orange-200 px-8 rounded-xl shadow-md hover:bg-orange-300/70 transition-all duration-300"
+                        className="py-1 bg-orange-200 px-8 rounded-xl shadow-md hover:bg-orange-300/70 transition-all duration-300 "
                       >
                         Generar Despacho
                       </button>
@@ -138,6 +138,14 @@ export const TableCompras = () => {
                 className="border border-gray-300 rounded-lg block w-full text-slate-400 p-1"
                 disabled={true}
               />
+            </div>
+            <div className="pb-14">
+              <button
+                className="py-6 px-14 rounded-lg bg-teal-600 text-white font-bold"
+                type="submit"
+              >
+                Asignar despacho
+              </button>
             </div>
           </form>
         </div>
