@@ -20,7 +20,7 @@ function Footer() {
               </h2>
               <ul className="text-gray-800 dark:text-gray-800 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="https://youtu.be/DtSsyxvaVqQ" className="hover:underline">
                     Recomendaciones embalaje
                   </a>
                 </li>
