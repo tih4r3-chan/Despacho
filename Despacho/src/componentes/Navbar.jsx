@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { Modal } from "./Modal"; 
 
 function Navbar() {
+  const [showModal, setShowModal] = useState(false); 
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
+  
+
   return (
     <nav className="bg-teal-600 border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -61,6 +69,7 @@ function Navbar() {
               <a
                 href="#"
                 className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                onClick={toggleModal}
               >
                 Sobre nosotros
               </a>
@@ -75,7 +84,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="/contacto" // Aquí estableces la URL de la página de contacto
+                href="/contacto"
                 className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Contacto
@@ -84,6 +93,30 @@ function Navbar() {
           </ul>
         </div>
       </div>
+      {showModal && (
+        <Modal open={showModal} onClose={toggleModal}>
+          <div className="p-3">
+            <div className="bg-white rounded-lg shadow-xl">
+              <div className="px-6 py-8">
+                <div className="text-center">
+                  <h1 className="text-4xl font-bold text-gray-800">¿Quiénes somos?</h1>
+                  <h2 className="mt-2 text-2xl font-semibold text-gray-700">Sobre Nosotros</h2>
+                </div>
+                <div className="mt-8 text-base text-gray-700 leading-relaxed">
+                  <p>
+                    Una empresa dedicada a la distribución nacional, internacional, almacenaje y logística. Los más de 40 años en el 
+                    mercado nos han permitido especializarnos y convertirnos en una de las empresas con mayor portafolio de productos. 
+                    Buscamos mantener y mejorar tu experiencia de forma permanente.
+                  </p>
+                  <p className="mt-4">
+                    Enfocados en las necesidades del cliente, la atención personalizada es prioridad para nosotros.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Modal>
+      )}
     </nav>
   );
 }
