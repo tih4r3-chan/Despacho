@@ -8,7 +8,6 @@ export const Modal = ({ open, onClose, children }) => {
       }`}
     >
       <div
-        type="button"
         onClick={(e) => {
           e.stopPropagation;
         }}
