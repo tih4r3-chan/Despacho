@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import axios from "axios"; // Importar Axios
+import Swal from "sweetalert2";
+import axios from "axios";
 
 export const FormDespacho = ({ venta, onClose }) => {
   const { register, handleSubmit } = useForm();
@@ -20,26 +21,19 @@ export const FormDespacho = ({ venta, onClose }) => {
     console.log("Datos del formulario:", jsonData);
 
     try {
-      const response = await axios.post(
-        "http://127.0.0.1:8000/despachos/",
-        jsonData,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
-      if (response.status === 200) {
-        // La solicitud fue exitosa
-        console.log("Solicitud exitosa");
-        onClose(); // Cerrar el modal después de enviar el formulario
-      } else {
-        // Manejar errores
-        console.log("Error en la solicitud:", response.status);
-      }
+      await axios.post("http://44.205.221.190:8000/despachos/", jsonData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      Swal.fire({
+        title: "Despacho registrado 🛻!",
+        text: "El despacho ha sido generado con éxito en la base de datos",
+        icon: "success",
+        confirmButtonText: "Aceptar",
+      });
+      onClose();
     } catch (error) {
-      // Manejar errores de red u otros errores
       console.error("Error en la solicitud:", error);
     }
   };
