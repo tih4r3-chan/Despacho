@@ -2,8 +2,7 @@ import Navbar from "./componentes/Navbar";
 import { SearchBar } from "./componentes/SearchBar";
 import Footer from "./componentes/Footer";
 import { TableCompras } from "./componentes/TableCompras";
-import PruebaCard from "./componentes/PruebaCard";
-import Carrusel from "./componentes/Carrusel";
+import { PruebaCards } from "./componentes/PruebaCards";
 import Reviews from "./componentes/Reviews";
 
 function App() {
@@ -12,10 +11,9 @@ function App() {
       <div>
         <Navbar />
       </div>
-      <div>{/* <Carrusel/>*/}</div>
       <SearchBar />
       <div>
-        <PruebaCard />
+        <PruebaCards />
       </div>
       <div>
         <TableCompras />
