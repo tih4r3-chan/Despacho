@@ -21,7 +21,7 @@ export const FormDespacho = ({ venta, onClose }) => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/despachos/",
+        "http://44.205.221.190:8000/despachos/",
         jsonData,
         {
           headers: {
