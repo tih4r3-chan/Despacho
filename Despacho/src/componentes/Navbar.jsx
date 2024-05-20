@@ -95,23 +95,21 @@ function Navbar() {
       </div>
       {showModal && (
         <Modal open={showModal} onClose={toggleModal}>
-          <div className="p-3">
-            <div className="bg-white rounded-lg shadow-xl">
-              <div className="px-6 py-8">
-                <div className="text-center">
-                  <h1 className="text-4xl font-bold text-gray-800">¿Quiénes somos?</h1>
-                  <h2 className="mt-2 text-2xl font-semibold text-gray-700">Sobre Nosotros</h2>
-                </div>
-                <div className="mt-8 text-base text-gray-700 leading-relaxed">
-                  <p>
-                    Una empresa dedicada a la distribución nacional, internacional, almacenaje y logística. Los más de 40 años en el 
-                    mercado nos han permitido especializarnos y convertirnos en una de las empresas con mayor portafolio de productos. 
-                    Buscamos mantener y mejorar tu experiencia de forma permanente.
-                  </p>
-                  <p className="mt-4">
-                    Enfocados en las necesidades del cliente, la atención personalizada es prioridad para nosotros.
-                  </p>
-                </div>
+          <div className="bg-white rounded-l shadow-xl p-2">
+            <div className="px-6">
+              <div className="text-center">
+                <h1 className="text-4xl font-bold text-gray-800">¿Quiénes somos?</h1>
+                <h2 className="mt-2 text-2xl font-semibold text-gray-700">Sobre Nosotros</h2>
+              </div>
+              <div className="mt-8 text-base text-gray-700 leading-relaxed">
+                <p>
+                  Una empresa dedicada a la distribución nacional, internacional, almacenaje y logística. Los más de 40 años en el 
+                  mercado nos han permitido especializarnos y convertirnos en una de las empresas con mayor portafolio de productos. 
+                  Buscamos mantener y mejorar tu experiencia de forma permanente.
+                </p>
+                <p className="mt-4">
+                  Enfocados en las necesidades del cliente, la atención personalizada es prioridad para nosotros.
+                </p>
               </div>
             </div>
           </div>
