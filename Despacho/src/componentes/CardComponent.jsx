@@ -1,6 +1,6 @@
 import React from "react";
 
-export const CardComponent = ({ title, description, buttonText }) => {
+export const CardComponent = ({ title, description, buttonText, onClick }) => {
   return (
     <div className=" p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-white mb-20 mr-10 h-full overflow-hidden">
       <a href="#">
@@ -12,7 +12,10 @@ export const CardComponent = ({ title, description, buttonText }) => {
         {description}
       </p>
       <div className="flex justify-center">
-        <button className="inline-flex items-center justify-center w-80 h-10 px-3 py-2 text-base text-center text-white bg-teal-500 border rounded-xl font-bold hover:bg-teal-600 transition-all duration-500 ">
+        <button
+          onClick={onClick}
+          className="inline-flex items-center justify-center w-80 h-10 px-3 py-2 text-base text-center text-white bg-teal-500 border rounded-xl font-bold hover:bg-teal-600 transition-all duration-500 "
+        >
           {buttonText}
           <svg
             className="rtl:rotate-180 w-3.5 h-3.5 ms-2"

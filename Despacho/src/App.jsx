@@ -16,9 +16,6 @@ function App() {
         <PruebaCards />
       </div>
       <div>
-        <TableCompras />
-      </div>
-      <div>
         <Reviews />
       </div>
       <div>
