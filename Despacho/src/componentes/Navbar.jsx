@@ -13,6 +13,7 @@ function Navbar() {
   const toggleModal = () => {
     setShowModal(!showModal);
   };
+  
 
   const toggleLoginModal = () => {
     setShowLoginModal(!showLoginModal);
@@ -22,6 +23,7 @@ function Navbar() {
     <nav className="bg-teal-600 border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="" className="h-8" alt="acavaellogo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Despacho
           </span>
@@ -63,11 +65,11 @@ function Navbar() {
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-cta"
         >
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 md:p-0 text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700rounded md:bg-transparent "
                 aria-current="page"
               >
                 Inicio
@@ -76,7 +78,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 onClick={toggleModal}
               >
                 Sobre nosotros
@@ -85,7 +87,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Servicios
               </a>
@@ -93,7 +95,7 @@ function Navbar() {
             <li>
               <a
                 href="/contacto"
-                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Contacto
               </a>
@@ -112,8 +114,8 @@ function Navbar() {
                 </div>
                 <div className="mt-8 text-base text-gray-700 leading-relaxed">
                   <p>
-                    Una empresa dedicada a la distribución nacional, internacional, almacenaje y logística. Los más de 40 años en el
-                    mercado nos han permitido especializarnos y convertirnos en una de las empresas con mayor portafolio de productos.
+                    Una empresa dedicada a la distribución nacional, internacional, almacenaje y logística. Los más de 40 años en el 
+                    mercado nos han permitido especializarnos y convertirnos en una de las empresas con mayor portafolio de productos. 
                     Buscamos mantener y mejorar tu experiencia de forma permanente.
                   </p>
                   <p className="mt-4">
