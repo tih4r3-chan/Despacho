@@ -1,18 +1,21 @@
 import React from "react";
 
-export const CardComponent = ({ title, description, buttonText }) => {
+export const CardComponent = ({ title, description, buttonText, onClick }) => {
   return (
-    <div className="w-80 h-80 p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-white flex flex-col justify-between mb-10"> 
+    <div className=" p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-white mb-20 mr-10 h-full overflow-hidden">
       <a href="#">
         <h5 className="mb-1 text-lg font-bold tracking-tight text-gray-900 dark:text-gray-800">
           {title}
         </h5>
       </a>
-      <p className="mb-5 font-normal text-gray-700 dark:text-gray-400 flex-grow">
+      <p className="mb-5 font-normal text-gray-700 dark:text-gray-400">
         {description}
       </p>
       <div className="flex justify-center">
-        <button className="inline-flex items-center justify-center w-full h-10 px-3 py-2 text-base text-center text-white bg-teal-500 border rounded-xl font-bold hover:bg-teal-600 transition-all duration-500">
+        <button
+          onClick={onClick}
+          className="inline-flex items-center justify-center w-80 h-10 px-3 py-2 text-base text-center text-white bg-teal-500 border rounded-xl font-bold hover:bg-teal-600 transition-all duration-500 "
+        >
           {buttonText}
           <svg
             className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
