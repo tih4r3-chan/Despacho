@@ -1,14 +1,21 @@
+// src/components/Navbar.js
 import React, { useState } from "react";
 import { Modal } from "./Modal";
+import ModalLogin from "./ModalLogin"; 
 import logo1 from '../assets/images/logo1.png';
 import logo2 from '../assets/images/logo2.png';
 import logo3 from '../assets/images/logo3.png';
 
 function Navbar() {
   const [showModal, setShowModal] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(false); 
 
   const toggleModal = () => {
     setShowModal(!showModal);
+  };
+
+  const toggleLoginModal = () => {
+    setShowLoginModal(!showLoginModal);
   };
 
   return (
@@ -23,6 +30,7 @@ function Navbar() {
           <button
             type="button"
             className="text-white focus:outline-none font-medium rounded-lg px-4 py-2 text-center"
+            onClick={toggleLoginModal} 
           >
             Iniciar Sesión
           </button>
@@ -117,6 +125,7 @@ function Navbar() {
           </div>
         </Modal>
       )}
+      <ModalLogin open={showLoginModal} onClose={toggleLoginModal} />
     </nav>
   );
 }
