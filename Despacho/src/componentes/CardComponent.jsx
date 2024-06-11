@@ -1,8 +1,10 @@
+
+
 import React from "react";
 
 export const CardComponent = ({ title, description, buttonText, onClick }) => {
   return (
-    <div className=" p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-white mb-20 mr-10 h-full overflow-hidden">
+    <div className="w-80 h-80 p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-white flex flex-col justify-between mb-10"> 
       <a href="#">
         <h5 className="mb-1 text-lg font-bold tracking-tight text-gray-900 dark:text-gray-800">
           {title}

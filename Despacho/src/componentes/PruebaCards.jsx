@@ -8,7 +8,7 @@ export const PruebaCards = () => {
 
   return (
     <section>
-      <div className="flex justify-center">
+      <div className="flex justify-center space-x-7">
         <CardComponent
           title="Consultar Ordenes de compra"
           description="Revisa las últimas oc realizadas para generar su despacho"
