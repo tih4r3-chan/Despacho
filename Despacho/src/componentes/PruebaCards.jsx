@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CardComponent } from "./CardComponent";
 import { TableCompras } from "./TableCompras";
+import TableOrdenes from "./TableOrdenes";
 
 export const PruebaCards = () => {
   const [tablaCompras, setTablaCompras] = useState(false);
@@ -35,8 +36,7 @@ export const PruebaCards = () => {
       </div>
 
       <section>
-        {tablaCompras && <TableCompras />}
-        {tablaOrdenes && <div>hola</div>}
+        {tablaOrdenes && <TableOrdenes/>}
       </section>
     </section>
   );
