@@ -36,6 +36,7 @@ export const PruebaCards = () => {
       </div>
 
       <section>
+        {tablaCompras && <TableCompras />}
         {tablaOrdenes && <TableOrdenes/>}
       </section>
     </section>

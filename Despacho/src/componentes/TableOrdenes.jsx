@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Modal } from "./Modal";
+import { FormDespacho } from "./FormDespacho";
 
 const TableOrdenes = () => {
   const [ordenes, setOrdenes] = useState([]);
@@ -61,14 +63,11 @@ const TableOrdenes = () => {
           </div>
         </div>
       </section>
-      {/* Modal logic here */}
-      {openModal && (
-        <Modal onClose={() => setOpenModal(false)} open={openModal}>
-          {ordenSeleccionada && (
-            <FormDespacho orden={ordenSeleccionada} onClose={() => setOpenModal(false)} />
-          )}
-        </Modal>
-      )}
+      <Modal onClose={() => setOpenModal(false)} open={openModal}>
+        {ordenSeleccionada && (
+          <FormDespacho orden={ordenSeleccionada} onClose={() => setOpenModal(false)} />
+        )}
+      </Modal>
     </>
   );
 };
