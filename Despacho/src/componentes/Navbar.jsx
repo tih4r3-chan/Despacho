@@ -1,4 +1,3 @@
-// src/components/Navbar.js
 import React, { useState } from "react";
 import { Modal } from "./Modal";
 import ModalLogin from "./ModalLogin"; 
@@ -8,24 +7,27 @@ import logo3 from '../assets/images/logo3.png';
 
 function Navbar() {
   const [showModal, setShowModal] = useState(false);
-  const [showLoginModal, setShowLoginModal] = useState(false); 
+  const [showLoginModal, setShowLoginModal] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleModal = () => {
     setShowModal(!showModal);
   };
   
-
   const toggleLoginModal = () => {
     setShowLoginModal(!showLoginModal);
   };
 
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
   return (
-    <nav className="bg-teal-600 border-gray-200">
+    <nav className="bg-teal-500/90 border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="" className="h-8" alt="acavaellogo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Despacho
+            itpCargo
           </span>
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -69,7 +71,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 md:p-0 text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700rounded md:bg-transparent "
+                className="block py-2 px-3 md:p-0 text-white  rounded hover:bg-gray-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700rounded md:bg-transparent "
                 aria-current="page"
               >
                 Inicio
@@ -78,24 +80,45 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent text-white "
                 onClick={toggleModal}
               >
                 Sobre nosotros
               </a>
             </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            <li className="relative">
+              <button
+                id="dropdownDefaultButton"
+                data-dropdown-toggle="dropdown"
+                onClick={toggleDropdown}
+                className=" font-medium text-center inline-flex items-center  py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent text-white "
+                type="button"
               >
                 Servicios
-              </a>
+                <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
+                </svg>
+              </button>
+              {showDropdown && (
+                <div id="dropdown" className="z-10 absolute divide-y divide-gray-100 rounded-lg w-44 bg-white shadow">
+                  <ul className="py-2 text-sm text-gray-700 dark:text-gray-300" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-teal-500/90 dark:hover:text-white">Envio documentos</a>
+                    </li>
+                    <li>
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-teal-500/90 dark:hover:text-white">Envio paquetes</a>
+                    </li>
+                    <li>
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-teal-500/90 dark:hover:text-white">Envio express</a>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </li>
             <li>
               <a
                 href="/contacto"
-                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
               >
                 Contacto
               </a>
@@ -105,9 +128,9 @@ function Navbar() {
       </div>
       {showModal && (
         <Modal open={showModal} onClose={toggleModal}>
-          <div className="p-3">
+          <div className="p-2">
             <div className="bg-white rounded-lg shadow-xl">
-              <div className="px-6 py-8">
+              <div className="px-6 py-5">
                 <div className="text-center">
                   <h1 className="text-4xl font-bold text-gray-800">¿Quiénes somos?</h1>
                   <h2 className="mt-2 text-2xl font-semibold text-gray-700">Sobre Nosotros</h2>
