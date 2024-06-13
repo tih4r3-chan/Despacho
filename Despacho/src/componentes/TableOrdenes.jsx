@@ -63,9 +63,16 @@ const TableOrdenes = () => {
           </div>
         </div>
       </section>
-      <Modal onClose={() => setOpenModal(false)} open={openModal}>
+      <Modal 
+        onClose={() => {
+          setOpenModal(false)
+          }}
+        open={openModal}
+        >
         {ordenSeleccionada && (
-          <FormDespacho orden={ordenSeleccionada} onClose={() => setOpenModal(false)} />
+          <FormDespacho 
+          venta={ordenSeleccionada} 
+          onClose={() => setOpenModal(false)} />
         )}
       </Modal>
     </>

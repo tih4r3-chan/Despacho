@@ -15,8 +15,8 @@ export const PruebaCards = () => {
           description="Revisa las últimas oc realizadas para generar su despacho"
           buttonText="Consultar"
           onClick={() => {
-            setTablaCompras(true);
-            setTablaOrdenes(false);
+  
+            
           }}
         />
         <CardComponent
