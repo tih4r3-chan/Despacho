@@ -71,7 +71,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 md:p-0 text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700rounded md:bg-transparent "
+                className="block py-2 px-3 md:p-0 text-white  rounded hover:bg-gray-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700rounded md:bg-transparent "
                 aria-current="page"
               >
                 Inicio
@@ -100,7 +100,7 @@ function Navbar() {
                 </svg>
               </button>
               {showDropdown && (
-                <div id="dropdown" className="z-10 absolute divide-y divide-gray-100 rounded-lg shadow w-44 bg-white shadow">
+                <div id="dropdown" className="z-10 absolute divide-y divide-gray-100 rounded-lg w-44 bg-white shadow">
                   <ul className="py-2 text-sm text-gray-700 dark:text-gray-300" aria-labelledby="dropdownDefaultButton">
                     <li>
                       <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-teal-500/90 dark:hover:text-white">Envio documentos</a>
@@ -118,7 +118,7 @@ function Navbar() {
             <li>
               <a
                 href="/contacto"
-                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
               >
                 Contacto
               </a>
@@ -128,9 +128,9 @@ function Navbar() {
       </div>
       {showModal && (
         <Modal open={showModal} onClose={toggleModal}>
-          <div className="p-3">
+          <div className="p-2">
             <div className="bg-white rounded-lg shadow-xl">
-              <div className="px-6 py-8">
+              <div className="px-6 py-5">
                 <div className="text-center">
                   <h1 className="text-4xl font-bold text-gray-800">¿Quiénes somos?</h1>
                   <h2 className="mt-2 text-2xl font-semibold text-gray-700">Sobre Nosotros</h2>

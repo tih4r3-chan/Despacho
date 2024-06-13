@@ -15,12 +15,12 @@ function Footer() {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
                 Condiciones servicio
               </h2>
-              <ul className="text-gray-800 dark:text-gray-800 font-medium">
+              <ul className="text-white font-medium">
                 <li className="mb-4">
-                  <a href="https://youtu.be/DtSsyxvaVqQ" className="hover:underline">
+                  <a href="#" className="hover:underline">
                     Recomendaciones embalaje
                   </a>
                 </li>
@@ -32,10 +32,10 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold  uppercase dark:text-white">
                 Siguenos
               </h2>
-              <ul className="text-gray-800 dark:text-gray-800">
+              <ul className=" text-white">
                 <li className="mb-4">
                   <a href="#" className="hover:underline ">
                     Instagram
@@ -49,10 +49,10 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
                 Legal
               </h2>
-              <ul className="text-gray-800 dark:text-gray-800">
+              <ul className="text-white">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     Condiciones de privacidad
