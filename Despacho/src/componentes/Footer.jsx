@@ -1,4 +1,5 @@
 import React from "react";
+import logo1 from '../assets/images/logo2.png';
 
 function Footer() {
   return (
@@ -7,10 +8,9 @@ function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
-              <img src="#" className="h-8 me-3" alt="logo" /> {/*logo */}
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Logo
-              </span>
+            <div className="flex justify-center mb-4">
+              <img src={logo1} alt="Logo" className="w-20 h-20" />
+            </div>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -72,7 +72,7 @@ function Footer() {
           <span className="text-sm text-gray-800 dark:text-gray-800 sm:text-center">
             © 2024{" "}
             <a href="#" className="hover:underline">
-              aaaa™
+              ITPCARGO™
             </a>
             . Todos los derechos reservados.
           </span>

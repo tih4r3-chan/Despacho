@@ -51,7 +51,7 @@ const TableOrdenes = () => {
                     <td>
                       <button
                         onClick={() => handleAbrirModal(orden)}
-                        className="py-1 bg-orange-200 px-8 rounded-xl shadow-md hover:bg-orange-300/70 transition-all duration-300"
+                        className="py-1 text-white bg-teal-500/90 hover:bg-teal-600 px-8 rounded-xl shadow-md transition-all duration-300"
                       >
                         Generar Despacho
                       </button>
